@@ -5,12 +5,12 @@ using namespace std;
 int main(){
   char c;
   char v;
-  cin >> c;
+  cin>>c;
   if (checkimput (x: c)) {
       v= conversione(x: c);
-      cout << v;
+      cout<<v;
   }else{
-      cout << "errore" << endl;
+      cout<<"errore"<<endl;
   }
   return 0;
 }
