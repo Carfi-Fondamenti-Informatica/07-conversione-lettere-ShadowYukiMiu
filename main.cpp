@@ -1,17 +1,15 @@
 #include <iostream>
 #include "lib.h"
 using namespace std;
-extern char ris; 
 
 int main(){
-  char a;
-  char b;
-  cout << "inserire un carattere:" << endl;
-  cin >> a;
-  b= conv(a);
-  if (b==true) {
-      cout << ris << endl;
-      }else{
+  char c;
+  char v;
+  cin >> c;
+  if (checkimput (x: c)) {
+      v= conversione(x: c);
+      cout << v;
+  }else{
       cout << "errore" << endl;
   }
   return 0;
