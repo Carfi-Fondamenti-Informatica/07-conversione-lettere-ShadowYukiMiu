@@ -1,14 +1,16 @@
 #include "lib.h"
-using char ris;
-
-bool conv(char c) {
-    if (c >= 'a' && c <= 'z') {
-        ris = c-32;
+bool checkimput(int x) {
+    if ((x>=65&&x<=90)||(x>=97&&x<=122))
         return true;
-    }else if (c >= 'A' && c <= 'Z') {
-        ris = c+32;
-        return true;
-    }else{
-        return flase;
-    }
-  }
+    else
+        return false;
+    
+}
+char conversione(char x){
+    char ris;
+        if (x>='A'&&x<='Z')
+            ris=x+32;
+        else if (x>='a'&&x<='z')
+            ris=x-32;
+        return ris;
+}
